@@ -1,0 +1,31 @@
+body{
+    font-family: sans-serif;
+    font-size: 12pt;
+    text-align: justify;
+}
+.caja1{
+    margin: 2%;
+    border: 10px solid orange;
+    padding: 2%;
+    background-color:  rgb(247, 210, 141);
+    width: 40%;
+}
+.caja2{
+    padding: 2%;
+    background-color: rgb(247, 210, 141);
+    border-color: orange;
+    border-width: 10px;
+    border-style: dashed;
+    margin-top: 3%;
+    border-color: black;
+    border-width: 2px;
+}
+.letras{
+    font-weight: bold;
+    color: blue;
+    background-color: white;
+}
+pre{
+    border-color: blue;
+    background-color: white;
+}
