@@ -1,0 +1,52 @@
+body{
+    text-align: justify;
+}
+ul.barra{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li.barrita{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: red;
+}
+#rojo{
+    background-color: red;
+}
+#rojo:hover{
+    background-color: gray;
+}
+h1{
+    text-align: center;
+    width:80%;
+}
+div.izq{    
+    float: left;
+    width: 25%;
+}
+div.dere{    
+    float: left;
+    width: 75%;
+}
+img{
+    float: left;
+    width: 30%;
+    padding: 0px 3% 0px;
+}
+li.columna{
+    width: 25%;
+    padding: 20px;
+    list-style:none;
+    float: left;
+}
