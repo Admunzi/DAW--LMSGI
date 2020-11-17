@@ -1,0 +1,92 @@
+@font-face{
+	font-family: "Dosis";
+	src: url("../fuentes/Dosis-VariableFont_wght.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Architects-Daughter";
+	src: url("../fuentes/ArchitectsDaughter-Regular.ttf");
+	font-weight: normal;
+	font-size: normal;
+}
+@font-face{
+	font-family: "Balsamic Sans";
+	src: url("../fuentes/BalsamiqSans-Regular.ttf");
+	font-weight: normal;
+	font-size: normal;
+}
+body{
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+    font-family: "Architects-Daughter";
+	color:  rgb(48, 150, 184);
+	size: 14px;
+	background-image: url("../imagenes/madera.jpg");
+}
+
+h1, h2{
+	font-family: "Dosis";
+	text-align: center;
+	color: rgb(48, 150, 184);
+	letter-spacing: 7px;
+	font-variant: small-caps;
+	text-shadow:1px 1px steelblue;
+}
+h3{
+	font-family: "Balsamic Sans";
+	font-size: 20pt;
+	color: indigo;
+	text-align: right;
+}
+p{
+	text-indent: 50px;
+	color: slateblue;
+}
+pre{
+	color:brown;
+	background: linear-gradient(IndianRed, LightCoral)
+}
+fondoazul{
+	background: MediumSlateBlue;
+	color: black;
+}
+g{
+    color: darkred;
+	font-weight: bold;
+}
+.cita{
+	text-align: right;
+}
+abbr{
+	color: sienna;
+	font-size: 16pt;
+	font-weight: bold;
+}
+span{
+	color: olive;
+	font-weight: bold;
+	font-style: italic;
+}
+ul{
+	font-family: "Architects-Daughter";
+	color: slateblue;
+	list-style-type: none;
+	padding: 0px;
+}
+li{
+	list-style-type: none;
+}
+li:before {
+	content: '✓ ';
+}
+#chicas{
+	list-style: none;
+	font-family: "Architects-Daughter";
+	color: slateblue;
+	text-indent: 0px;
+}
+.fondoclaro{
+	background-image: url("../imagenes/madera_claro.jpg");
+}
