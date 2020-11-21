@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>HTML &amp; CSS: Curso práctico avanzado. http://desarrolloweb.dlsi.ua.es/</title>
+        <meta charset="utf-8">
+        <meta name="Autor" content="Daniel Ayala Cantador"/>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <h1>Controles de formulario</h1>
+        <form action="prueba.php" method="POST" accept-charset="utf-8">
+            <fieldset>
+                <legend>Datos Personales</legend><br/>
+
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" size="20" maxlength="35">
+                <br/><br/>
+
+                <label for="correo">Correo electrónico: </label>
+                <input type="text" name="correo" size="20" maxlength="30">
+                <br/><br/>
+
+                <label for="url">URL: </label>
+                <input type="search" name="URL" size="20" maxlength="255" placeholder="Escribe la URL de tu página">
+                <br/><br/>
+
+                <label for="ciudad">Ciudad: </label>
+                <select name="ciudad">
+                    <optgroup label="Andalucia">
+                        <option value="Co">Cordoba</option>
+                        <option value="Se">Sevilla</option>
+                        <option value="Gr">Granada</option>
+                        <option value="Al">Almeria</option>
+                        <option value="Ma">Malaga</option>
+                        <option value="Ca">Cadiz</option>
+                    </optgroup>
+                    <optgroup label="Extremadura">
+                        <option value="BA">Badajoz</option>
+                        <option value="CA">Cáceres</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend><br/>
+
+                <label for="fecha">Fecha: </label>
+                <input type="date" name="Fecha" size="20" maxlength="35">
+                <br/><br/>
+
+                <label for="tiempo">Tiempo: </label>
+                <input type="time" name="tiempo" size="20" maxlength="35">
+                <br/><br/>
+
+                <label for="fecha_y_hora">Fecha y hora: </label>
+                <input type="datetime" name="fecha_y_hora" size="20" maxlength="35" placeholder="dd/mm/aaaa hh:mm">
+                <br/><br/>
+
+                <label for="mes">Mes: </label>
+                <input type="month" name="mes" size="20" maxlength="35">
+                <br/><br/>
+                
+                <label for="semana">Semana: </label>
+                <input type="week" name="semana" size="20" maxlength="35">
+                <br/><br/>
+                
+                <label for="numero">Número (min -10, max 10): </label>
+                <input type="number" name="numero" size="20" maxlength="35" min="-10" max="10">
+                <br/><br/>
+                
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" name="telefono" size="20" maxlength="9">
+                <br/><br/>
+                
+                <label for="busqueda">Término de búsqueda: </label>
+                <input type="search" name="busqueda" size="20" maxlength="35">
+                <br/><br/>
+                
+                <label for="color">Color favorito: </label>
+                <input type="color" name="color" size="20" maxlength="35">
+                <br/><br/>
+            </fieldset>
+            <fieldset>
+                <legend>Otros controles</legend><br/>
+
+                Aficiones
+                <label>
+                <input type="checkbox" name="cine" value="Si"></label>
+                
+                <label>
+                <input type="checkbox" name="deporte" value="Si"></label>
+    
+                <label for="color">Deporte</label><br/><br/>
+
+                Forma de pago<br/>
+                <input type="radio" name="forma_pago" value="visa"/> <label>Visa</label>
+                <input type="radio" name="forma_pago" value="ae"/> <label>American Express</label>
+                <input type="radio" name="forma_pago" value="mc"/> <label>MasterCard</label>
+    
+            </fieldset><br/><br/>
+            <label for="equipo">Euipo de fútbol
+                <input type="text" name="equipo" list="equipos"
+            </label>
+            <datalist id="equipos">
+                <option value="Real Madrid" />
+                <option value="Barcelona" />
+            </datalist><br/><br/>
+            <input type="submit" name="aceptar" id="aceptar" value="Aceptar" size="20">
+            <input type="reset" name="borrar" value="Limpiar">
+
+                
+        </form>
+    </body>
+</html>
+
