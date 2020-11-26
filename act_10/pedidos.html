@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>HTML &amp; CSS: Curso práctico avanzado.</title>
+        <meta charset="utf-8">
+        <meta name="Autor" content="Daniel Ayala Cantador"/>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="cabecera">Pizzas Artesanas</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./pedidos.html">Pedidos</a></li>
+                <li><a href="#news">Horarios</a></li>
+                <li><a href="#contact">Productos</a></li>        
+                <li><a class="active" href="./inicio.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Datos de pedidos</h1>
+            <form action="prueba.php" method="POST" accept-charset="utf-8">
+                <fieldset>
+                    <legend>Datos Cliente</legend>
+    
+                    <label for="nombre" class="junto">Nombre: </label>
+                    <input type="text" name="nombre" size="40" maxlength="35">
+
+                    <label for="apellidos" class="junto">Apellidos: </label>
+                    <input type="text" name="apellidos" size="40" maxlength="35">
+    
+                    <label for="telefono" class="junto">Teléfono: </label>
+                    <input type="tel" name="telefono" size="10" maxlength="9" placeholder="#########">
+        
+                    <label for="direccion" class="junto">Direccion: </label>
+                    <input type="text" name="direccion" size="40" maxlength="35">
+
+                    <label for="correo" class="junto">Correo: </label>
+                    <input type="email" name="correo" size="40" maxlength="35">
+                </fieldset>
+                <fieldset>
+                    <legend>Datos pedido</legend>
+
+                    <label  class="junto">Entrega</label>
+                    <input type="radio" name="envio" value="domi"/> <label >Domicilio</label><br>
+                    <input type="radio" name="envio" value="local"/> <label>Local</label><br>
+
+                    <label class="junto"> Pizzas</label>
+                    <input type="checkbox" name="envio" value="domi"/> <label>Barbacoa</label><br>
+                    <input type="checkbox" name="envio" value="local"/> <label>Peperoni</label><br>
+                    <input type="checkbox" name="envio" value="local"/> <label>4 Quesos</label><br>
+
+                    <label for="entrega" class="junto">Entrega:</label>
+                    <select name="entrega">
+                        <option value="Lo">Local</option>
+                        <option value="Do">Domicilio</option>
+                    </select>
+                </fieldset>
+                <p style="clear:left">
+                    <br>
+                    <input type="submit" name="aceptar" id="aceptar" value="Enviar" size="20">
+                    <input type="reset" name="borrar" value="Borrar">
+                </p>
+    
+           </form>
+        </section>
+        <aside>
+            <h2>Novedades</h2>
+            <p>
+                Pedidos a domicilio sin cargo<br><br>
+                Nuevas instalaciones
+            </p>
+    
+        </aside>
+        <footer>
+            Desarrollo web estático se distribuye bajo licencia Creative Commons Atribution-No-Comercial-CompartirIgual 3.0 Unported
+        </footer>
+    </body>
+</html>
