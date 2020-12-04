@@ -1,0 +1,39 @@
+body{
+    background-color: lightcyan;
+}
+h1{
+    text-align: center;
+    color: dodgerblue;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+h2{
+    text-align: center;
+    color: rgb(50, 161, 50);
+    font-size: medium;
+}
+table, td, th{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+td{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.letras{
+    color: rgb(69, 117, 221);
+}
+.fondo{
+    background-color: rgb(101, 141, 228);
+    color: aliceblue;
+    font-weight: bold;
+}
+.izq{
+    float: left;
+}
