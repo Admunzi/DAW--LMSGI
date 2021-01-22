@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Responsive-FlexBox</title>
+        <meta charset="utf-8">
+        <meta name="Autor" content="Daniel Ayala Cantador"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/registro.css">
+    </head>
+    <body>
+        <div class="caja">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-3">
+                        <label for="usuario">Nombre</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" id="usuario" name="Usuario" placeholder="Tu nombre"><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <label for="apellidos">Apellidos</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos"><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <label for="ciudad">Ciudad</label>
+                    </div>
+                    <div class="col-9">
+                        <select name="ciudad" id="ciudad">
+                            <option value="Cordoba">Córdoba</option>
+                            <option value="Malaga">Málaga</option>
+                            <option value="Cadiz">Cádiz</option>
+                            <option value="Huelva">Huelva</option>
+                        </select><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <label for="Observaciones">Observaciones</label>
+                    </div>
+                    <div class="col-9">
+                        <textarea rows="4" cols="50" name="desc" placeholder="Algo que añadir"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="submit" value="Registrar">
+                </div>
+              
+            </form>
+        </div>
+    </body>
+</html>
+
