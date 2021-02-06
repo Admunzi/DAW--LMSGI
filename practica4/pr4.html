@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Grid Layout-Ejercicio 14</title>
+	<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<div class="Contenedor-Grid1">
+
+		<div class="grid-item item1-Grid1"></div>
+
+		<div class="grid-item item2-Grid1">
+			<ul>
+				<li><a class="active" href="#Inicio">Inicio</a></li>
+				<li><a href="#Noticias">Noticias</a></li>
+				<li><a href="#Contacto">Contacto</a></li>
+				<li><a href="#Sobre Nosotros">Sobre Nosotros</a></li>
+			</ul>
+		</div>
+		
+		<div class="grid-item item3-Grid1">
+			<h3 style="color: #4CAF50;">CÓRDOBA ROMANA</h3>
+			<p style="font-size: 16px;">	
+				<strong>Templo Romano de Córdoba</strong>.
+				La actual ciudad de Córdoba fue fundada por el general romano Marco Claudio Marcelo en el año 171 antes de J.C. y mantuvo el mismo nombre de Corduba 
+				o "altozano junto al río" de un poblado turdetano surgido a finales del segundo milenio y cuyos habitantes vivían de la agricultura, la ganadería y 
+				el comercio de la importación de cerámica y la distribución de cobre procedente de Sierra Morena. Los habitantes de este poblado prerromano se 
+				incorporaron a la nueva ciudad que no tardó en convertirse en la capital oficiosa de la provincia romana Hispania Ulterior.
+
+				A partir del año 49 a. de J.C. Corduba se vio envuelta en la guerra que enfrentó a Julio César y Pompeyo hasta que la batalla de Munda 
+				en el año 45 dio el triunfo a César, que ocupó la ciudad tras un duro asedio.
+			</p>
+
+			<h3 style="color: #4CAF50;">Galería</h3>
+			<div class="Contenedor-Grid-interior hover01">
+				<div class="grid-item-interior item1-interior"><figure><img src="./img/1.jpg" alt="imagen de cordoba"></figure></div>
+				<div class="grid-item-interior item2-interior"><figure><img src="./img/2.jpg" alt="imagen de cordoba"></figure></div>
+				<div class="grid-item-interior item3-interior"><figure><img src="./img/3.jpg" alt="imagen de cordoba"></figure></div>  
+				<div class="grid-item-interior item4-interior"><figure><img src="./img/4.jpg" alt="imagen de cordoba"></figure></div>  
+				<div class="grid-item-interior item5-interior"><figure><img src="./img/5.jpg" alt="imagen de cordoba"></figure></div>  
+				<div class="grid-item-interior item6-interior"><figure><img src="./img/6.jpg" alt="imagen de cordoba"></figure></div>  
+			</div>
+		</div>
+		
+		<div class="grid-item item4-Grid1">
+			<h2 style="color: #4CAF50;">Formulario Información</h2>
+			<form action="/action_page.php">
+				<label for="name">Nombre:</label>
+				<input type="text" id="name" name="name"><br><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br><br>
+				<label for="entrada">Fecha entrada:</label>
+				<input type="date" id="email" name="email"><br><br>
+				<label for="salida">Fecha salida:</label>
+				<input type="date" id="email" name="email"><br><br>
+				<input type="submit" value="Mandar">
+			</form>
+		</div>
+		
+		<div class="grid-item item5-Grid1"><p>© Copyright 2021 | Todos los derechos reservados | Web Dani Ayala</p></div>
+  </div>
+</body>
+</html>

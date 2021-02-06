@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.Contenedor-Grid1{
+    display: grid;
+    grid-template-areas: 'header header header header header header'
+    'menu menu menu menu menu menu'
+    'main main main main main right'
+    'footer footer footer footer footer footer';
+}
+
+.grid-item{
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.item1-Grid1{
+    grid-area: header;
+    background-image: url("../img/banner.jpg");
+    padding-bottom: 150px;
+    background-size: cover;
+}
+.item2-Grid1{
+    grid-area: menu;
+    padding: 0;
+}
+.item3-Grid1{
+    grid-area: main;   
+    padding: 0;
+}
+.item4-Grid1{
+    grid-area: right;
+    background-color: lightgray;  
+}
+.item5-Grid1{
+    grid-area: footer;
+    background-color:black;
+}
+.item5-Grid1 p{
+    color: white;
+    font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/*---------------INTERIOR-------------*/
+
+.Contenedor-Grid-interior{
+    display: grid;
+    grid-template-areas: 'auto auto auto';
+
+}
+.grid-item-interior{
+    background-color: #fff;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+@media only screen and (max-width: 600px){
+    .Contenedor-Grid1{
+        grid-template-areas: 
+        'header header header header header header'
+        'menu menu menu menu menu menu'
+        'main main main main main main'
+        'right right right right right right'
+        'footer footer footer footer footer footer';    
+    }  
+
+} 
